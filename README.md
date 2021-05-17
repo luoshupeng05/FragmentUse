@@ -12,9 +12,13 @@ void popBackStack(int id, int flags);
 void popBackStack(String name, int flags);
 
 参数int id是当提交变更时transaction.commit()的返回值。
+
 参数string name是transaction.addToBackStack(String tag)中的tag值；
+
 至于int flags有两个取值：0或FragmentManager.POP_BACK_STACK_INCLUSIVE；
+
 当取值0时，表示除了参数一指定这一层之上的所有层都退出栈，指定的这一层为栈顶层； 
+
 当取值POP_BACK_STACK_INCLUSIVE时，表示连着参数一指定的这一层一起退出栈； 
 
 
