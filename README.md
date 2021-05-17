@@ -23,6 +23,7 @@ void popBackStack(String name, int flags);
 
 
 演示过程：
+
 1、逐个将Fragment1,2,3,4添加到窗口中，在添加时，每添加一个Fragment要利用transaction的addToBackStack将此次操作加入到回退栈中。
 
 2、然后点击"PopBackStack"方法，将栈顶最上层的操作回退。退将最后一次添加回退出来，显示Fragment3.
