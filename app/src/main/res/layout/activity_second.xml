@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment的回退栈演示，FragmentTransaction事务回滚使用" />
+
+    <Button
+        android:id="@+id/btn_show_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加Fragment1" />
+
+    <Button
+        android:id="@+id/btn_show_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加Fragment2" />
+
+    <Button
+        android:id="@+id/btn_show_fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加Fragment3" />
+
+    <Button
+        android:id="@+id/btn_show_fragment4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加Fragment4" />
+
+    <Button
+        android:id="@+id/btn_PopBackStack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PopBackStack" />
+
+    <Button
+        android:id="@+id/btn_BackToStack2_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BackToStack2_0" />
+
+    <Button
+        android:id="@+id/btn_BackToStack2_INCLUSIVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BackToStack2_INCLUSIVE" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>
