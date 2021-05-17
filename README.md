@@ -20,11 +20,17 @@ void popBackStack(String name, int flags);
 
 演示过程：
 1、逐个将Fragment1,2,3,4添加到窗口中，在添加时，每添加一个Fragment要利用transaction的addToBackStack将此次操作加入到回退栈中。
+
 2、然后点击"PopBackStack"方法，将栈顶最上层的操作回退。退将最后一次添加回退出来，显示Fragment3.
+
 3、点击“ADD Fragment4”将栈还原到1，2，3，4依次ADD进栈的状态，即操作1完成后的栈状态，然后点击“BackToStack2_0”，其实调用的方法是：
+
    manager.popBackStack("fragment2",0);//方法一,通过TAG回退
+   
    回退到添加ADD Fragment2的状态，最后一个参数设为0，表明，要回退ADD Fragment2的之后的操作，将Fragment2的操作置为栈顶。
+   
 4、最后仍然是先点击"Add Fragment3"和"ADD Fragment4"，将栈还原到操作1完成后的栈状态。然后点击“BackToStack2_INCLUSIVE”;其调用的方法是：
+
    manager.popBackStack("fragment2",FragmentManager.POP_BACK_STACK_INCLUSIVE);//方法一,通过TAG回退
 
    
