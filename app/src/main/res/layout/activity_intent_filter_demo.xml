@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntentFilterDemo">
+
+    <Button
+        android:id="@+id/btn_call_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打来拨号界面" />
+
+    <Button
+        android:id="@+id/btn_go_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开地图" />
+
+    <Button
+        android:id="@+id/btn_go_viewBinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到viewBinding演示界面" />
+
+
+
+
+
+</LinearLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,8 @@ public class SecondActivity extends AppCompatActivity {
 
     private Button btnBackToStack2_INCLUSIVE;
 
+    private Button btnGoIF;
+
     Fragment1 fragment1;
 
     Fragment2 fragment2;
@@ -49,6 +52,7 @@ public class SecondActivity extends AppCompatActivity {
         btnPopBackStack = findViewById(R.id.btn_PopBackStack);
         btnBackToStack2_0 = findViewById(R.id.btn_BackToStack2_0);
         btnBackToStack2_INCLUSIVE = findViewById(R.id.btn_BackToStack2_INCLUSIVE);
+        btnGoIF = findViewById(R.id.btn_go_Intent_Filter);
 
         btnShowFG1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,6 +134,16 @@ public class SecondActivity extends AppCompatActivity {
                 FragmentManager fm = getSupportFragmentManager();
                 Log.d(TAG, "onClick: =========回退到第二个碎片创建前的提交========");
                 fm.popBackStack("fg2",FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
+            }
+        });
+
+        btnGoIF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this
+                        ,IntentFilterDemo.class);
+                startActivity(intent);
 
             }
         });

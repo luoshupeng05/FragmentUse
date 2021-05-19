@@ -54,6 +54,12 @@
         android:layout_height="wrap_content"
         android:text="BackToStack2_INCLUSIVE" />
 
+    <Button
+        android:id="@+id/btn_go_Intent_Filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到intent-filter演示" />
+
 
     <FrameLayout
         android:id="@+id/fragment_container"
