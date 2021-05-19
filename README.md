@@ -37,7 +37,9 @@ void popBackStack(String name, int flags);
 4、最后仍然是先点击"Add Fragment3"和"ADD Fragment4"，将栈还原到操作1完成后的栈状态。然后点击“BackToStack2_INCLUSIVE”;其调用的方法是：
 
    manager.popBackStack("fragment2",FragmentManager.POP_BACK_STACK_INCLUSIVE);//方法一,通过TAG回退
-   =========================================================第二次提交=======================================================================
+   =========================================================
+   第二次提交================================================
+   =======================
   1、更新intent-filter的使用练习
   2、ViewBinding练习
   3、关于ViewBinding
