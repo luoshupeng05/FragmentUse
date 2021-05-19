@@ -37,5 +37,20 @@ void popBackStack(String name, int flags);
 4、最后仍然是先点击"Add Fragment3"和"ADD Fragment4"，将栈还原到操作1完成后的栈状态。然后点击“BackToStack2_INCLUSIVE”;其调用的方法是：
 
    manager.popBackStack("fragment2",FragmentManager.POP_BACK_STACK_INCLUSIVE);//方法一,通过TAG回退
+   =========================================================第二次提交=======================================================================
+  1、更新intent-filter的使用练习
+  2、ViewBinding练习
+  3、关于ViewBinding
+  /**
+ * 视图绑定的使用（ViewBinding）
+ * 1、调用生成的绑定类中包含的静态 inflate() 方法。此操作会创建该绑定类的实例以供 Activity 使用。
+ * 
+ * 2、通过调用 getRoot() 方法或使用 Kotlin 属性语法获取对根视图的引用。
+ * 
+ * 3、将根视图传递到 setContentView()，使其成为屏幕上的活动视图。
+ */
+
+  
+   
 
    
