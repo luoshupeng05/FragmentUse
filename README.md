@@ -38,7 +38,7 @@ void popBackStack(String name, int flags);
 
    manager.popBackStack("fragment2",FragmentManager.POP_BACK_STACK_INCLUSIVE);//方法一,通过TAG回退
    
-   ==============================第二次提交==========================================
+====================第二次提交=========================
    
   
   1、更新intent-filter的使用练习
